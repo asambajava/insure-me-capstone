@@ -1,5 +1,5 @@
 ---
-- hosts: prod-server
+- hosts: prodServer
   become: true
   tasks:
   - name: update apt
