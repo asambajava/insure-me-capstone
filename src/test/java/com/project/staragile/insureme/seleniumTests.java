@@ -12,6 +12,7 @@ public class seleniumTests {
 	public static void main(String[] args) {
 	System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver-mac-arm64/chromedriver");
 	ChromeOptions chromeoptions = new ChromeOptions();
+	chromeoptions.addArguments("--headless");
 	WebDriver driver=new ChromeDriver(chromeoptions);
 	driver.get("http://54.87.202.235:8081/contact.html");
 	WebElement name=driver.findElement(By.id("inputName"));
